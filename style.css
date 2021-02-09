@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242333;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    margin:0;
+    font-family: 'lato',sans-serif;
+}
+.movie {
+    margin: 20px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.movie select {
+    border-radius: 5px;
+    margin-left:5px;
+    border:0;
+    appearance: none;
+    padding:5px 15px;
+}
+.container {
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+.sitting {
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.seat {
+    background-color: darkgray;
+    height:12px;
+    width:15px;
+    margin:2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.selected{
+    background-color:white;
+}
+.occupied{
+    background-color: blue;
+}
+.row{
+    display:flex;
+}
+.seat:nth-child(2){
+    margin-right: 15px;
+}
+.seat:nth-child(7){
+    margin-left: 15px;
+}
+.seat:not(.occupied):hover{
+    cursor:pointer;
+    transform:scale(1.2);
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;;
+    transform:scale(1);
+}
+.showcase {
+    background: rgba(0,0,0,0.2);
+    display:flex;
+    align-items: center;
+    border-radius: 15px;
+    padding:5px 10px;
+    justify-content: center;
+    list-style-type: none;
+}
+.showcase li{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 10px;
+}
+.showcase li small{
+    margin-left: 5px;
+}
+.screen{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin: 15px 0px;
+    box-shadow:0px 5px 5px cadetblue;
+    transform: rotateX(-45deg);
+}
+p.text span {
+    color: cornflowerblue;
+}
